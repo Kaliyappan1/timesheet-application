@@ -1,0 +1,31 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  button {
+    border-radius: 1px 20px 0;
+    border: 0px solid #000000;
+    background-color: #CB6CE6;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+  button:active {
+    transform: scale(0.95);
+  }
+  .focus:active {
+    transform: scale(0.95);
+  }
+  button:focus {
+    outline: none;
+  }
+
+  button.ghost {
+    border-color: #ffffff;
+  }
+

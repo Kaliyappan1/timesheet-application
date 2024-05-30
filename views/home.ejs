@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <title>Web OnSet</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class="logo"><img src="images/SoftMania_LOGO__2_-removebg-preview (1).png" height="70px" alt="softmania logo"></label>
+      <ul>
+        
+        <li><a href="/admin">Admin</a></li>
+        <li><a href="/login">form</a></li>
+        <li><a class="active" href="/login">login</a></li>
+      </ul>
+    </nav>
+
+    <!-- home -->
+    <div class="btn-field">
+        <button onclick="location='/admin'" type="button" class="color"><a href="/admin">Admin</a></button>
+        <button onclick="location='/login'" type="button" class="color"><a href="/login">User</a></button>
+        
+    </div>
+   
+
+    <%- include('includes/footer') %>
+
+    <script src="script.js"></script>
+  </body>
+</html>

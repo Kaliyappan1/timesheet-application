@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <%- include('includes/head') %>
+  <title>signUp</title>
+  <!-- unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="signup.css">
+
+</head>
+<body>
+    <%- include('includes/header') %>
+<!-- home -->
+<div class="container">
+  <h1>Sign Up</h1>
+  <form action="/signup" method="post">
+      <div class="input-group">
+          <div class="input-data"><br>
+              <input type="text" class="box" id="name" name="name" placeholder="name" required>
+          </div>
+          <div class="input-data">
+              <input type="email" class="box" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="input-data">
+              <input type="password" class="box" id="password" name="password" placeholder="password" required>
+          </div>
+          <div class="input-data">
+              <input type="password" class="box" id="password" name="re_password" placeholder="re-enter password" required>
+          </div>
+          <div>
+              <button type="submit" value="signup" class="summit">submit</button>
+          </div>
+      </div>
+      <div class="btn-field">
+            <p>if you already signup?</p>
+          <button onclick="location='/login'" type="button"><a class="color" href="/login">Login</a></button>
+      </div>
+  </form>
+</div>
+<!-- footer -->
+<%- include('includes/footer') %>
+
+
+</body>
+</html>
